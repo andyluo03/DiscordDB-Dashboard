@@ -76,25 +76,6 @@ export default function SecondSidebar() {
               <ListItemContent>Overview</ListItemContent>
             </ListItemButton>
           </ListItem>
-          <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
-              <ListItemDecorator>
-                <i data-feather="bell" />
-              </ListItemDecorator>
-              <ListItemContent>Notification</ListItemContent>
-              <Chip variant="soft" size="sm">
-                10
-              </Chip>
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
-              <ListItemDecorator>
-                <i data-feather="bar-chart" />
-              </ListItemDecorator>
-              <ListItemContent>Analytics</ListItemContent>
-            </ListItemButton>
-          </ListItem>
         </List>
         <Box sx={{ pl: 1, mt: 'auto', display: 'flex', alignItems: 'center' }}>
           <div>

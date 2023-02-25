@@ -4,6 +4,7 @@ import Divider from '@mui/joy/Divider';
 import List from '@mui/joy/List';
 import Sheet from '@mui/joy/Sheet';
 import IconButton from '@mui/joy/IconButton';
+import ColorSchemeToggle from './ColorSchemeToggle';
 import MuiLogo from './MuiLogo';
 
 export default function FirstSidebar() {
@@ -54,10 +55,11 @@ export default function FirstSidebar() {
           '--List-gap': '8px',
         }}
       >
+      <ColorSchemeToggle/>
       </List>
       <Divider />
         <IconButton variant="plain" sx={{ ml: 'auto' }}>
-              <i data-feather="log-out" />
+        <i data-feather="log-out" />
         </IconButton>    
       </Sheet>
   );

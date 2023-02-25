@@ -16,8 +16,7 @@ export default function ColorSchemeToggle({
     return (
       <IconButton
         size="sm"
-        variant="outlined"
-        color="neutral"
+        variant="plain"
         {...props}
         sx={sx}
         disabled
@@ -26,10 +25,9 @@ export default function ColorSchemeToggle({
   }
   return (
     <IconButton
+      variant="plain"
       id="toggle-mode"
       size="sm"
-      variant="outlined"
-      color="neutral"
       {...props}
       onClick={(event) => {
         if (mode === 'light') {
