@@ -10,7 +10,6 @@ import Typography from '@mui/joy/Typography';
 import useScript from './useScript';
 import FirstSidebar from './components/FirstSidebar';
 import SecondSidebar from './components/SecondSidebar';
-import OrderTable from './components/OrderTable';
 import Header from './components/Header';
 import ColorSchemeToggle from './components/ColorSchemeToggle';
 import customTheme from './theme';
@@ -105,7 +104,7 @@ export default function JoyOrderDashboardTemplate() {
                 Dashboard
               </Link>
               <Typography fontSize="inherit" variant="soft" color="primary">
-                Orders
+                Overview
               </Typography>
             </Breadcrumbs>
             <ColorSchemeToggle
@@ -126,7 +125,7 @@ export default function JoyOrderDashboardTemplate() {
             }}
           >
             <Typography level="h1" fontSize="xl4">
-              Orders
+              Overview
             </Typography>
             <Box sx={{ flex: 999 }} />
             <Box sx={{ display: 'flex', gap: 1, '& > *': { flexGrow: 1 } }}>
@@ -146,7 +145,6 @@ export default function JoyOrderDashboardTemplate() {
               </Button>
             </Box>
           </Box>
-          <OrderTable />
         </Box>
       </Box>
     </CssVarsProvider>

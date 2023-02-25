@@ -7,7 +7,6 @@ import ListItem from '@mui/joy/ListItem';
 import ListItemContent from '@mui/joy/ListItemContent';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import ListItemButton from '@mui/joy/ListItemButton';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import { closeSidebar } from '../utils';
@@ -70,7 +69,7 @@ export default function SecondSidebar() {
             Dashboard
           </ListSubheader>
           <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
+            <ListItemButton selected onClick={() => closeSidebar()} variant="soft">
               <ListItemDecorator>
                 <i data-feather="activity" />
               </ListItemDecorator>
@@ -96,49 +95,14 @@ export default function SecondSidebar() {
               <ListItemContent>Analytics</ListItemContent>
             </ListItemButton>
           </ListItem>
-          <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
-              <ListItemDecorator>
-                <i data-feather="star" />
-              </ListItemDecorator>
-              <ListItemContent>Saved reports</ListItemContent>
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton selected variant="soft">
-              <ListItemDecorator>
-                <i data-feather="shopping-cart" />
-              </ListItemDecorator>
-              <ListItemContent>Orders</ListItemContent>
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
-              <ListItemDecorator>
-                <i data-feather="user" />
-              </ListItemDecorator>
-              <ListItemContent>User reports</ListItemContent>
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton onClick={() => closeSidebar()}>
-              <ListItemDecorator>
-                <i data-feather="settings" />
-              </ListItemDecorator>
-              <ListItemContent>Manage notifications</ListItemContent>
-            </ListItemButton>
-          </ListItem>
         </List>
         <Box sx={{ pl: 1, mt: 'auto', display: 'flex', alignItems: 'center' }}>
           <div>
             <Typography fontWeight="lg" level="body2">
-              Olivia Ryhe
+              Example Name
             </Typography>
-            <Typography level="body2">olivia@email.com</Typography>
+            <Typography level="body2">Example Email</Typography>
           </div>
-          <IconButton variant="plain" sx={{ ml: 'auto' }}>
-            <i data-feather="log-out" />
-          </IconButton>
         </Box>
       </Sheet>
     </React.Fragment>
