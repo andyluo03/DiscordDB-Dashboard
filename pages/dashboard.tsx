@@ -9,7 +9,10 @@ import FirstSidebar from './components/FirstSidebar';
 import SecondSidebar from './components/SecondSidebar';
 import Header from './components/Header';
 import customTheme from './theme';
-import Chart from './components/Chart'
+import Chart from './components/Chart';
+import Storage from './components/Storage'
+import RequestTypeFrequencies from './components/RequestTypeFrequencies'
+import MoneySaved from './components/MoneySaved'
 
 const useEnhancedEffect =
   typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
@@ -87,10 +90,10 @@ export default function Dashboard() {
               Overview
             </Typography>
           </Box>
-          <Box sx={{ display: 'flex', gap: 1, flexDirection: { xs: "column", md: "row"}  }}>
-            <Chart/>
-            <Chart/>
-            <Chart/>
+          <Box sx={{ display: 'grid', gap: 1, gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            <Storage/>
+            <RequestTypeFrequencies/>
+            <MoneySaved/>
           </Box>
           <Box sx={{ display: 'flex', gap: 1, flexDirection: { xs: "column", md: "row"}  }}>
             <Chart/>

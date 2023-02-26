@@ -2,6 +2,7 @@ import * as React from 'react';
 import Card from '@mui/joy/Card';
 import { useTheme } from '@mui/material/styles';
 import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
+import Typography from '@mui/joy/Typography';
 
 // Generate Sales Data
 function createData(time: string, amount?: number) {
@@ -24,8 +25,9 @@ export default function Chart() {
   const theme = useTheme();
 
   return (
-    <Card sx={{ width: 1/3 }}>
-      <ResponsiveContainer width={"90%"} aspect={1} >
+    <Card variant="outlined" sx={{ width: 1/3,  my: '5' }}>
+    <Typography sx={{ mb: 2 }} level="h4">Storage Used</Typography>
+      <ResponsiveContainer width={"100%"} aspect={1.5} >
         <LineChart
           data={data}
           margin={{
