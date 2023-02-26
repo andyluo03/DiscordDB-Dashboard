@@ -95,9 +95,7 @@ export default function Dashboard() {
             <RequestTypeFrequencies/>
             <MoneySaved/>
           </Box>
-          <Box sx={{ display: 'flex', gap: 1, flexDirection: { xs: "column", md: "row"}  }}>
-            <Chart/>
-            <Chart/>
+          <Box sx={{ display: 'grid', alignItems: "stretch" }}>
             <Chart/>
           </Box>
         </Box>
